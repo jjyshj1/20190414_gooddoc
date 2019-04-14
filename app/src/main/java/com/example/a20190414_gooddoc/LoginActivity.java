@@ -1,5 +1,6 @@
 package com.example.a20190414_gooddoc;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,7 +32,10 @@ public class LoginActivity extends AppCompatActivity {
                 String userId = txtid.getText().toString();
                 String userPw = txtpw.getText().toString();
 
-                if (userId.equals("tjeit") && userPw.equals("qwer1234")){
+                if (userId.equals("qqqq") && userPw.equals("qwer1234")){
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();//로그인화면 종료
 
                 }
                 else{
